@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register for an event</title>
+	<style type="text/css">
+		.div1 
+		{
+  			margin: auto;
+  			width: 34%;
+  			border: 3px solid white;
+  			padding: 5px;
+			height:250px;
+			border-radius: 10px;
+			box-shadow: 0 30px 40px rgba(255,255,255, 0.3);
+			position: fixed;
+			background:rgba(255,255,255, 0.3);
+			transform: translate(-50%, 0);
+			left :50%;
+		}
+		a:link 
+		{
+  			color: darkblue;
+		}
+		a:hover 
+		{
+			color: green;
+  			text-decoration: underline;
+		}
+		a:visited 
+		{
+  			color: purple;
+		}
+		a:active 
+		{
+  			color: red;
+		}
+		#myVideo 
+		{
+  			position: fixed;
+  			right: 0;
+  			bottom: 0;
+  			min-width: 100%;
+  			min-height: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<video autoplay muted loop id="myVideo">
+ 			 <source src="Music Festival - 41823.mp4" type="video/mp4">
+		</video>
+		&nbsp&nbsp<img src="KIIT FEST..svg" width="110px">
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="div1">
+		<p align="center"><font style="font-family: 'Caveat';font-weight: 600;font-size: 25px;color: white;">WE WOULD LOVE TO SEE YOU HERE ❤️</font></p><br>
+		<p align="center">
+		<button onclick="alertmsg()" style="background-color:red;border-radius: 20px;color:white;font-weight: 200;font-size:15px;border-color: red;width:90px;height:40px;">Register</button>
+		</p><br>
+		<p align="center">
+			<button onclick="location.href='Majorproject.html'" style="background-color: yellow;border-radius: 20px;border-color:yellow;padding: 10px;">Home</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<button onclick="history.back(-1)" style="background-color: yellow;border-radius:20px;border:yellow;padding: 10px;">Events</button>
+		</p>
+	</div>
+	<script type="text/javascript">
+		function alertmsg()
+		{
+			alert("Thank you for registering ✔️ We will update you soon!")
+		}
+	</script>
+</body>
+</html>

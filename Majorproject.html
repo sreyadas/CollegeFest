@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COLLEGE FEST</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		.div1
+		{
+			position: relative;
+			height: 500px
+			width:100%;
+		}
+		.div2
+		{
+			width : 50%;
+			height : 40px;
+			margin : auto;
+			text-align: right;
+			padding-top: 5px;
+			
+		}
+		.div3
+		{
+			width : 100%;
+			height : 500px;
+			background-color: black;
+			display: flex;
+		}
+		.div4
+		{
+			width: 100%;
+			height :400px;
+			display: flex;
+		}
+		.navfont
+		{
+			size : 14px;
+			color : #0C2549;
+			font-family: Arial;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		a:link 
+		{
+  			color: darkblue;
+		}
+		a:hover 
+		{
+			color: green;
+  			text-decoration: underline;
+		}
+		a:visited 
+		{
+  			color: purple;
+		}
+		a:active 
+		{
+  			color: red;
+		}
+		.top-right
+		{
+			position : relative;
+			top: 300px;
+			right : 100px;
+			height :400px;
+			width : 600px;
+			padding-top: 15px;
+			padding-right: 15px;
+			padding-left: 15px;
+			padding-bottom: 15px;
+			border-radius: 10px;
+		}
+		#fonts
+		{
+			font-weight: bold;
+			font-size: 50px;
+			font-family: 'Roboto';
+		}
+		.button1
+		{
+			background-color: #FF1493;
+			color: white;
+			padding: 15px 32px;
+  			text-align: center;
+  			display: inline-block;
+  			font-size: 16px;
+  			border-radius: 12px;
+  			border-color: #FF1493;
+		}
+		.button2
+		{
+			background-color: #581845 ;
+			color: white;
+			padding: 15px 32px;
+  			text-align: center;
+  			display: inline-block;
+  			font-size: 16px;
+  			border-radius: 12px;
+  			border-color: #581845 ;
+		}
+    	@-webkit-keyframes slide 
+    	{
+    		100% { right: 0; }
+		}
+		@keyframes slide 
+		{
+    		100% { right: 0; }
+		}
+		img
+		{
+			max-width: 100%;
+    		max-height: 100%;
+		}
+		* 
+		{
+			box-sizing:border-box
+		}
+		.slideshow-container 
+		{
+  			max-width: 600px;
+  			position: relative;
+  			margin: auto;
+		}
+		.mySlides 
+		{
+  			display: none;
+		}
+		.prev, .next 
+		{
+  			cursor: pointer;
+  			position: absolute;
+  			top: 50%;
+  			width: auto;
+  			margin-top: -22px;
+  			padding: 16px;
+  			color: white;
+  			font-weight: bold;
+  			font-size: 18px;
+  			transition: 0.6s ease;
+  			border-radius: 0 3px 3px 0;
+  			user-select: none;
+		}
+		.next 
+		{
+  			right: 0;
+  			border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover 
+		{
+  			background-color: rgba(0,0,0,0.8);
+		}
+		.text 
+		{
+  			color: #f2f2f2;
+  			font-size: 15px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			bottom: 8px;
+  			width: 100%;
+  			text-align: center;
+		}
+		.numbertext 
+		{
+  			color: #f2f2f2;
+  			font-size: 12px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			top: 0;
+		}
+		.dot 
+		{
+  			cursor: pointer;
+  			height: 15px;
+  			width: 15px;
+  			margin: 0 2px;
+  			background-color: #bbb;
+  			border-radius: 50%;
+  			display: inline-block;
+  			transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover 
+		{
+  			background-color: #717171;
+		}
+		.fade 
+		{
+  			-webkit-animation-name: fade;
+  			-webkit-animation-duration: 1.5s;
+ 			animation-name: fade;
+  			animation-duration: 1.5s;
+		}
+		@-webkit-keyframes fade 
+		{
+  			from {opacity: .4}
+  			to {opacity: 1}
+		}
+		@keyframes fade 
+		{
+  			from {opacity: .4}
+  			to {opacity: 1}
+		}
+		#slide 
+		{
+    		position: absolute;
+    		right: -600px;
+    		width: 600px;
+    		height: 370px;
+    		background:rgba(255,255,255, 0.6);
+    		-webkit-animation: slide 0.5s forwards;
+    		-webkit-animation-delay: 0.3s;
+    		animation: slide 0.5s forwards;
+    		animation-delay: 0.3s;
+    	}
+}
+	</style>
+</head>
+<body bgcolor="#F5F5F5">
+	&nbsp&nbsp<img src="KIIT FEST..svg" width="90px" align="center">
+	<div class="div2" style="float:right;">
+		<a href="Majorproject.html" class="navfont">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="#about" class="navfont">About</a>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="login.html" class="navfont">Log in</a>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="https://kiit.ac.in/contact/" class="navfont">Contact Us</a>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	</div>
+	<br><br>
+	<div class="div1" id="">
+		<img src="collegefest.jpeg" >
+		<div class="top-right" id="slide">
+			<font id="fonts">Still haven't registered?<br>Hurry Up !<br>Registrations are closing soon.</font>
+			<br><br><br>
+			<button onclick="location.href = 'Register.html';" class="button1" style="text-decoration: none;color: black;">Register</button> 
+		</div>
+	</div>
+	<br><br>
+	<p align=center id="about" style="text-align: center;font-weight: bold;font-size: 40px;">ABOUT KIIT FEST </p>
+	<div align="center" style="width: 400px;margin: auto;">
+		<font size=3px style="text-align: center;font-family: 'Arial';letter-spacing: 2px;line-height: 1.6;">KIIT FEST is a three day Annual techno-cultural college fest of KIIT University, Bhubaneswar. It is one of the largest Festivals of the Eastern paradise of India.KIITFEST is an ever-expanding universe of glory and greatness, where fun and games meet battles and battles become wars, where we put the sparkle in the air and glitz in the land and where we make the stars shine.</font>
+	</div>
+	<br><br><br>
+	<div class="div3" id="registration">
+		<img src="fest3.jpg">
+		<font style="color: white;font-size: 45px;padding-top: 80px;">Register For The Upcoming 'MIND-BOGGLING' Events !<br>
+			<font style="font-size: 20px;color: white;font-family: Montserrat">
+				<ul>
+					<li><a href="cultural.html" style="color:white;text-decoration: none;">CULTURAL EVENTS</a></li><br>
+					<li><a href="technical.html" style="color :white;text-decoration: none;">TECHNICAL EVENTS</a></li><br>
+					<li><a href="management.html" style="color :white;text-decoration: none;">MANAGEMENT EVENTS</a></li><br>
+					<li><a href="sports.html" style="color :white;text-decoration: none;">SPORTS EVENTS</a></li><br>
+					<li><a href="literary.html" style="color :white;text-decoration: none;">LITERARY EVENTS</a></li><br>
+					<li><a href="fun.html" style="color :white;text-decoration: none;">FUN EVENTS</a></li><br>
+				</ul>
+			</font>
+		</font>
+	</div>
+	<div class="div4">
+		<img src="abstract1.jpg">
+		<font style="color: black;padding-top: 80px;font-weight: bold;"><font style="font-size: 45px;">Becoming a Sponsor
+			</font><br><br><br>
+			<font style="font-size:16px;text-align: center;font-weight: normal;line-height: normal;letter-spacing: 1.7px;line-height: 1.6;font-family: Arial">
+				KIIT Fest presents an unmatched consumer offering for college students by unique and engaging experiences from locally and nationally recognized brands, to form the biggest back to school celebrations. Reach thousands of students at once at our large scale events. Complete the fields below for more information on CollegeFest. You can also contact us for information on reaching students across the country.
+			</font><br><br><br>
+			<button class="button2"><a href="Sponsor.html" style="text-decoration: none;color:white;">Become a Sponsor</a></button>
+		</font>
+	</div>
+	<br><br><br>
+	<div style="width: 100%;background-color:#FFF862 ">
+		<br>
+	<div class="slideshow-container">
+		<p style="text-align: center;font-size: 40px;font-weight: bold;font-style: italic;">Dont miss these . . . </p>
+	<br>
+  		<div class="mySlides fade">
+    		<div class="numbertext">1 / 3</div>
+    		<img src="fest1.jpg" style="width:100%">
+  		</div>
+  		<div class="mySlides fade">
+    		<div class="numbertext">2 / 3</div>
+    		<img src="fest2.jpg" style="width:100%">
+  		</div>
+  		<div class="mySlides fade">
+    		<div class="numbertext">3 / 3</div>
+    		<img src="fest5.jpg" style="width:100%">
+  		</div>
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span>
+  		<span class="dot" onclick="currentSlide(2)"></span>
+  		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</div>
+<div style="width: 100%;height:500px;background-color: #2B3856;">
+	<br><br><br><br>
+	<p align="center"><img src="KIIT FEST.2.svg" width="250px" height="50px"></p><br>
+	<p align="center"><font style="font-family: Arial;color: grey;font-size: 20px;">Copyright © 2020 KIITFest, LLC. All Rights Reserved. Send Inquires To <a href="mailto:kiit@kiit.ac.in" style="color: #00FFFF">kiit@kiit.ac.in</a></font></p><br>
+	<p align="center"><a href="https://www.facebook.com/KIITUniversity/"><img src="fb2.svg" width="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.instagram.com/kiituniversity/?hl=en"><img src="ig.svg" width="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/kiituniversity?lang=en"><img src="twitter.svg" width="30px"></a></p>
+</div>
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) 
+		{
+  			showSlides(slideIndex += n);
+		}
+		function currentSlide(n) 
+		{
+  			showSlides(slideIndex = n);
+		}
+		function showSlides(n) 
+		{
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) 
+  			{
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) 
+  			{
+      		dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+		}
+	</script>
+</body>
+</html>
